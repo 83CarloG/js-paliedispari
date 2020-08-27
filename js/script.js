@@ -7,6 +7,8 @@
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
+
+// Primo esercizio
 var parola = prompt('Inserisci una parola');
 
 function palindroma (str)	{
@@ -24,4 +26,8 @@ function palindroma (str)	{
 	}
 }
 
-alert(palindroma(parola));
+if (palindroma(parola)) {
+	alert('La parola è palindroma');
+} else {
+	alert('La parola non è palindroma');
+}
