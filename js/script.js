@@ -62,7 +62,7 @@ function esito (num) {
 }
 
 // Comunico all'utente le sue scelte e quelle del Bot
-alert('il tuo numero è ' + numeroUtente + ' la tua scelta è ' + scelta)
+alert('il tuo numero è ' + numeroUtente + ' la tua scelta è ' + scelta);
 alert('il numero scelto dal computer è ' + numeroBot);
 alert('la somma è di ' + sum);
 
