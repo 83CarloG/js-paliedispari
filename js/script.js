@@ -58,7 +58,7 @@ function getRandomInt (min, max) {
 
 // Funzione per trovare se un numero è pari o dispari
 function esito (num) {
-	num % 2 ? 'd' : 'p';
+	num % 2 ? alert('Hai vinto!') : alert('Hai perso!!');
 }
 
 // Comunico all'utente le sue scelte e quelle del Bot
@@ -67,8 +67,4 @@ alert('il numero scelto dal computer è ' + numeroBot);
 alert('la somma è di ' + sum);
 
 //	Lo informo dell'esito
-if (esito(sum) === scelta) {
-	alert('Hai vinto!');
-} else {
-	alert('Hai perso!!');
-}
+esito(sum);
