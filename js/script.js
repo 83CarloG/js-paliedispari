@@ -31,7 +31,6 @@ if (palindroma(parola)) {
 	alert('La parola non è palindroma');
 }
 
-
 // Secondo esercizio
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -40,26 +39,34 @@ if (palindroma(parola)) {
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-
+// 1 Dichiaro le variabili
+// 1a il numero dell'utente
 var numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
+// 1b la scelta pari/dispari
 var scelta = prompt('pari o dispari?p/d');
+// 1c il numero del bot
 var numeroBot = getRandomInt(1, 6);
+// 1d sommo i due numeri
 var sum = numeroUtente + numeroBot;
 
-function getRandomInt(min, max) {
+// Funzione per il numero random del Bot
+function getRandomInt (min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min)) + min; //	The maximum is exclusive and the minimum is inclusive
 }
 
+// Funzione per trovare se un numero è pari o dispari
 function esito (num) {
 	num % 2 ? 'd' : 'p';
 }
 
+// Comunico all'utente le sue scelte e quelle del Bot
 alert('il tuo numero è ' + numeroUtente + ' la tua scelta è ' + scelta)
 alert('il numero scelto dal computer è ' + numeroBot);
 alert('la somma è di ' + sum);
 
+//	Lo informo dell'esito
 if (esito(sum) === scelta) {
 	alert('Hai vinto!');
 } else {
