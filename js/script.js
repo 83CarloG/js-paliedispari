@@ -6,6 +6,11 @@
 var parola = prompt('Inserisci una parola');
 
 function palindroma (str)	{
+	// uso le RegExp per accettare come palindrome parole  e frasi: maiuscole, minuscole, intere frasi e simboli
+	// NON È FARINA DEL MIO SACCO. TROVATO ONLINE. E' IMPOSSIBILE RICORDARSI TUTTE LE ESPRESSIONI REGOLARI!!!
+	var re = /[^A-Za-z0-9]/g;
+	str = str.toLowerCase().replace(re, '');
+
 // Misuro la lunghezza della stringa
 	var lung = str.length;
 // Ciclo la prima metà della stringa
